@@ -5,8 +5,8 @@ void main() {
     home: Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
-        title: Text(
-          'Dice'
+        title: Center(
+          child: Text('Dice Game made with Flutter'),
         ),
         backgroundColor: Colors.red,
       ),
@@ -22,10 +22,20 @@ class DicePage extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: Image.asset('images/dice1.png'),
+            child: TextButton(
+              onPressed: (){
+                print('Dice 1');
+              },
+              child: Image.asset('images/dice1.png'),
+            ),
           ),
           Expanded(
-            child: Image.asset('images/dice2.png'),
+            child: TextButton(
+              onPressed: (){
+                print('Dice 2');
+              },
+              child: Image.asset('images/dice2.png'),
+            ),
           ),
         ],
       ),
