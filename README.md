@@ -1,4 +1,6 @@
-# Flutter Game
+# App to Roll Two Dice | Made with Flutter
+
+![Flutter Dice Game Demo](images/flutterDiceDemo.gif)
 
 ## Getting Started
 

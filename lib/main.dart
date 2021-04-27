@@ -3,15 +3,27 @@ import 'dart:math';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
-      backgroundColor: Colors.red,
-      appBar: AppBar(
-        title: Center(
-          child: Text('Dice Game made with Flutter'),
-        ),
+    home: SafeArea(
+      child: Scaffold(
         backgroundColor: Colors.red,
+        appBar: AppBar(
+          title: Center(
+            child: Text('Dice Game made with Flutter'),
+          ),
+          backgroundColor: Colors.red,
+        ),
+        body: DicePage(),
+        bottomNavigationBar: BottomAppBar(
+          color: Colors.grey[700],
+          child: Text(
+            'Made by Alex Duthie with thanks from London App Brewery',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15.0,
+            ),
+          ),
+        ),
       ),
-      body: DicePage(),
     ),
   ));
 }
@@ -57,5 +69,4 @@ class _DicePageState extends State<DicePage> {
       ),
     );
   }
-
 }
